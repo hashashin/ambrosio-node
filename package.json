@@ -1,14 +1,16 @@
 {
   "name": "node-red-heroku",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "feedparser": "~0.19.2",
-    "mongodb": "~1.4.x",
-    "nano": "~5.11.0",
+    "feedparser": "~2.1.0",
+    "mongodb": "~2.2.x",
+    "nano": "~6.2.0",
     "node-red": "0.x",
     "node-red-contrib-admin": "0.x",
+    "node-red-contrib-github": "^0.1.5",
     "node-red-contrib-graphs": "^0.3.5",
     "node-red-contrib-json": "^0.2.0",
+    "node-red-contrib-telegrambot-plus": "^1.10.0",
     "node-red-contrib-ui": "^1.2.19",
     "node-red-contrib-web-worldmap": "^1.0.22",
     "node-red-dashboard": "^2.2.1",
@@ -18,7 +20,7 @@
     "node-red-node-openweathermap": "^0.1.14",
     "node-red-node-random": "0.0.8",
     "node-red-node-twitter": "^0.1.9",
-    "redis": "~0.10.1",
+    "redis": "~2.6.5",
     "when": "~3.x"
   },
   "engines": {
