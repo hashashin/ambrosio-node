@@ -1,8 +1,7 @@
 language: node_js
 cache: yarn
 node_js:
-   - "6.9.4"
-   - "7.4.0"
+   - "6.10.0"
 matrix:
   allow_failures:
     - node_js: "7.4.0"
@@ -14,10 +13,13 @@ notifications:
   on_failure: always # default: always
   on_start: always   # default: never
 env:
-  - CXX=g++-4.8
+  - CXX=g++-4.8 CC=gcc-4.8
 addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
+before_install:
+  - npm install -g npm@'=4.4.1'
+  - npm --version
